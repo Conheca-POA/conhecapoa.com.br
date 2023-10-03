@@ -1,0 +1,57 @@
+.poa ._header {
+  background-color: var(--bg-03);
+  color: var(--color-09);
+
+  padding: 1rem .5rem;
+
+  box-shadow: var(--shadow-01);
+
+  z-index: 5;
+}
+
+.poa ._header ._logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.poa ._header ._logo ._p1 {
+  font-weight: 400;
+}
+
+.poa ._header ._logo ._p2 {
+  font-weight: 700;
+}
+
+.poa ._footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--bg-03);
+  color: var(--color-09);
+
+  padding: 0.5rem 1rem;
+
+  width: -webkit-fill-available;
+
+  box-shadow: var(--shadow-02);
+
+  z-index: 5;
+}
+
+.poa ._footer ._version {
+  display: flex;
+  align-items: center;
+
+  gap: .5rem;
+}
+
+@media screen and (min-width: 425px) {
+  .poa ._header {
+    padding: 1.3rem;
+  }
+}

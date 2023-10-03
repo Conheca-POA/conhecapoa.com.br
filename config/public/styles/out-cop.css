@@ -1,0 +1,232 @@
+/* == Body == */
+.poa ._body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100vh;
+}
+
+/* == Main == */
+.poa ._main {
+  display: flex;
+
+  height: inherit;
+}
+
+/* = Photo = */
+.poa ._main ._photo {
+  position: relative;
+
+  border-left: 8px solid var(--bg-03);
+  border-right: 8px solid var(--bg-03);
+  z-index: 0;
+
+  display: none;
+}
+
+.poa ._main ._photo ._copyright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  margin-right: 10px;
+
+  background-color: var(--bg-03);
+  border-radius: 5px 5px 0 0;
+  color: var(--color-09);
+
+  font: var(--font-complemento);
+
+  padding: 0.5rem;
+
+  text-underline-offset: 3px;
+}
+
+.poa ._main ._photo ._copyright:hover {
+  transition: all 0.5s;
+
+  text-decoration: underline;
+}
+
+.poa ._main ._photo ._bg {
+  height: 100%;
+  width: 45rem;
+
+  background-image: url(https://live.staticflickr.com/5255/5500465658_3fe3a8a7e0_o.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* = Form = */
+.poa ._main ._cop {
+  display: grid;
+  place-content: center;
+
+  width: -webkit-fill-available;
+
+  gap: 1.5rem;
+
+  padding: 0 1rem;
+}
+
+.poa ._main ._cop span {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.2rem;
+}
+
+.poa ._main ._cop h2 {
+  font: var(--h2);
+  font-weight: 700;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--color-04);
+}
+
+.poa ._main ._cop p {
+  font: var(--font-large);
+  font-weight: 700;
+  font-size: 1.15rem;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.poa ._main ._form {
+  display: grid;
+  gap: 2rem;
+}
+
+.poa ._main ._form div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.2rem;
+}
+
+.poa ._main ._form label {
+  font: var(--font-base);
+  font-weight: 500;
+
+  color: var(--color-01);
+
+  padding-left: 0.5rem;
+}
+
+.poa ._main ._form input {
+  background-color: transparent;
+  border-bottom: 2px solid var(--bg-03);
+
+  padding: 0.5rem;
+  outline: none !important;
+}
+
+.poa ._main ._form input:hover {
+  transition: all 0.5s;
+
+  border-bottom: 2px solid var(--bg-06);
+
+  box-shadow: var(--shadow-03);
+}
+
+.poa ._main ._form input:active {
+  border-bottom: 2px solid var(--bg-06);
+
+  box-shadow: var(--shadow-03);
+}
+
+.poa ._main ._form input:focus-visible {
+  outline: 2px dotted var(--focus);
+  border-bottom: 2px solid var(--bg-06);
+
+  box-shadow: var(--shadow-03);
+}
+
+.poa ._main ._form section {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+}
+
+.poa ._main ._form section label {
+  padding: 0;
+
+  font-size: 0.8rem;
+}
+
+.poa ._main ._form section span {
+  flex-direction: row;
+}
+
+.poa ._main ._form .css-dnty2r {
+  border: 2px solid var(--bg-03);
+  border-radius: 5px;
+
+  color: var(--color-03);
+
+  width: 25px;
+  height: 25px;
+}
+
+.poa ._main ._form a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.poa ._main ._form a:hover {
+  transition: all 0.5s;
+
+  color: var(--color-06);
+}
+
+.poa ._main ._form button {
+  background-color: var(--bg-03);
+  border-radius: 5px;
+  color: var(--color-08);
+
+  padding: 0.8rem;
+
+  font: var(--font-large);
+  font-weight: 500;
+}
+
+.poa ._main ._form button:hover {
+  transition: all 0.5s;
+
+  background-color: var(--bg-06);
+  box-shadow: var(--shadow-01);
+}
+
+.poa ._main ._form button:focus-visible {
+  background-color: var(--bg-06);
+  box-shadow: var(--shadow-01);
+}
+
+@media screen and (min-width: 768px) {
+  .poa ._main ._form section label {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* = Photo = */
+  .poa ._main ._photo {
+    display: flex;
+  }
+
+  .poa ._main ._photo ._bg {
+    width: 25rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .poa ._main ._photo ._bg {
+    width: 40rem;
+  }
+}
